@@ -1,0 +1,42 @@
+<header>
+    <div style="margin-bottom:0;background-color: #171717; text-align: center;">
+            <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+                <h1 class="display-1" style="color:greenyellow;font-size: 4vmin">user@Robert_Solca:~/{{ page.where }}$</h1>
+            </a>
+    </div>
+
+    <ul class="nav justify-content-center" >
+        <li class="nav-item">
+          <a class="nav-link active" href="{% link about.html %}">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% link projects.html %}">Projects</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Learn</a>
+            <div class="dropdown-menu" style="background: #404040;">
+                <div class="menu_title">Programming</div>
+                <a class="dropdown-item" href="{% link basics.html %}">Basics</a>    
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% link dsa.html %}">Data Structures and Algorithms</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="{% link blueprints.html %}">Blueprints</a>
+                <div class="dropdown-divider"></div>
+                <div class="menu_title">IT</div>
+                <a class="dropdown-item" href="{% link linux.html %}">Linux</a>
+                <a class="dropdown-item" href="{% link windows.html %}">MS Windows</a>
+                <a class="dropdown-item" href="{% link networking.html %}">Networking</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+                <a class="nav-link" href="{% link debate.html %}">Debate</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% link blog.html %}">Blog</a>
+        </li>
+      </ul>
+</header>
+      

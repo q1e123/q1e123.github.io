@@ -1,0 +1,25 @@
+@import "monokai.css";
+
+.menu_title{
+    text-align: center;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.dropdown-menu a{
+    background: #404040;
+    color: #FFFFFF !important;
+}
+
+.dropdown-menu a:hover{
+    background: cornflowerblue;
+    color: black !important;
+}
+
+body{
+    color: #FFFFFF;
+}
+
+.accordion h1{
+    color: white;
+}

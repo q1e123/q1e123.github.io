@@ -1,0 +1,12 @@
+---
+layout: page
+title: Programming basics
+where: Programming
+permalink: /Programming/basics
+---
+<h1 style="color:orange;">Programming basics</h1>
+<p>The basics of programming. Most code is written in pseudocode.</p>
+
+{% for post in site.categories["basics"] %}
+    <a href="{{post.url}}"><li style="color: cornflowerblue;">{{ post.title }}</li></a>
+{% endfor %}

@@ -1,0 +1,13 @@
+---
+layout: page
+title: Blog
+where: Blog
+permalink: /blog
+---
+<h1 style="color:orange;">Blog</h1>
+
+<p> Random stuff</p>
+
+{% for post in site.categories["blog"] %}
+    <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
+{% endfor %}
