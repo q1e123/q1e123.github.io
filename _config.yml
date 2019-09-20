@@ -28,7 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  q1e123
 
 # Build settings
-theme: qtheme
+remote_theme: q1e123/qtheme
 highlighter: rouge
 
 plugins:
