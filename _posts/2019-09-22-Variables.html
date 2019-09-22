@@ -47,46 +47,64 @@ Programming languages can be case sensitive, meaing that <i>this</i> is not the 
 </p>
 <br>
 
-Where are variables stored?
+<h2>Where are variables stored?</h2>
+<p>
 
-This depends on the programming language and its compiler/environment. Usually they are stored either in RAM or in the registers.
-I will get into compilers later, for now you just need to know that the variables are stored somewhere in the memory. 
+        <br>
+        This depends on the programming language and its compiler/environment. Usually they are stored either in RAM or in the registers.
+        I will get into compilers later, for now you just need to know that the variables are stored somewhere in the memory. 
+        <br>
+</p>
 
-## Declaring variables
+<h2>Declaring variables</h2>
+<p>
+        Before using a variable the computer first needs to allocate the memory for that variable. It's like before going to a trip you need to prepare yourself. 
+        In <b>most</b> programming languages to declare a variable you do something like this:
 
-Before using a variable the computer first needs to allocate the memory for that variable. It's like before going to a trip you need to prepare yourself. 
-In **most** programming languages to declare a variable you do something like this:
-
-> data_type variable_name
-
-### Example
-
-In C, if you want to declare a variable that will store integer values  you do:
+<br>
 
 {% highlight c %}
-int x;
+data_type x
 {% endhighlight %}
+        <br>
+<h3>Example</h3>
+        
+        In C, if you want to declare a variable that will store integer values  you do:
+        <br>
+        {% highlight c %}
+        int x;
+        {% endhighlight %}
+</p>
+<br>
 
-## Assignment
-
-Usually to store a value into a variable you do somthing like this:
-
->variable_name = value
-
-### Example
-
-In C if you want to store value *0* into the variable that we've declared previous you do:
+<h2>Assignment</h2>
+<br>
+<p>
+        Usually to store a value into a variable you do somthing like this:
+<br>
 {% highlight c %}
-x = 0;
+variable_name = value
 {% endhighlight %}
-
-In most programming languages you can do declaration and assignment in the same time:
-
-> data_type variable_name = value
-
-### Example
-
-By combining the two previous examples we get:
-{% highlight c %}
-int x = 0;
+        
+        <h3>Example</h3>
+        
+        In C if you want to store value *0* into the variable that we've declared previous you do:
+        {% highlight c %}
+        x = 0;
+        {% endhighlight %}
+        <br>
+        In most programming languages you can do declaration and assignment in the same time:
+        
+        {% highlight c %}
+data_type x = value
 {% endhighlight %}
+        <br>
+        <h3>Example</h3>
+        <br>
+        By combining the two previous examples we get:
+        {% highlight c %}
+        int x = 0;
+        {% endhighlight %}
+        
+</p>
+<br>
