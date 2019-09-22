@@ -4,7 +4,7 @@ title:  Greedfall is Sherlock Holmes with magic
 categories: [blog]
 tag: [gaming]
 where: blog
-desc: I've finished Greedfall, an RPG made by *Spiders*. It gave me some Dragon Age vibes with its mechanics regarding the story and the companions. The reason I am saying Greedfall is Sherlock Holms with magic is that lots of quest involve invastigating something.
+desc: I've finished Greedfall, an RPG made by Spiders. It gave me some Dragon Age vibes with its mechanics regarding the story and the companions. The reason I am saying Greedfall is Sherlock Holms with magic is that lots of quest involve invastigating something.
 ---
 I've finished Greedfall, an RPG made by *Spiders*. It gave me some Dragon Age vibes with its mechanics regarding the story and the companions. The reason I am saying Greedfall is Sherlock Holms with magic is that lots of quest involve invastigating something.
 
