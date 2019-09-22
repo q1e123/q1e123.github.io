@@ -23,3 +23,17 @@ body{
 .accordion h1{
     color: white;
 }
+
+
+h1{
+    color: orange !important; 
+}
+
+h2{
+    color: orange !important;
+}
+
+
+h3{
+    color: orange !important;
+}
