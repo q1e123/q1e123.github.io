@@ -9,12 +9,12 @@ desc: Learn data structures and algorithms
 <p>For algorithms you will find the code and a proof. For data structures you will find the data structre and its operations</p>
 
 <h2 style="color:orange;">Data structures</h2>
-{% for post in site.categories["ds"] %}
+{% for post in site.tags["ds"] %}
     <a href="{{post.url}}"><li style="color: cornflowerblue;">{{ post.title }}</li></a>
 {% endfor %}
 
 <br><br>
 <h2 style="color:orange;">Algorithms</h2>
-{% for post in site.categories["algo"] %}
+{% for post in site.tags["algo"] %}
     <a href="{{post.url}}"><li style="color: cornflowerblue;">{{ post.title }}</li></a>
 {% endfor %}

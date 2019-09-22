@@ -6,8 +6,8 @@ permalink: /Programming/basics
 desc: Learn programming
 ---
 <h1 style="color:orange;">Programming basics</h1>
-<p>The basics of programming. Most code is written in pseudocode.</p>
+<p>The basics of programming. The code will be written in pseudocode or in C/C++</p>
 
-{% for post in site.categories["basics"] %}
+{% for post in site.tags["basics"] %}
     <a href="{{post.url}}"><li style="color: cornflowerblue;">{{ post.title }}</li></a>
 {% endfor %}

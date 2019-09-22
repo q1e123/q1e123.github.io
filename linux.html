@@ -8,6 +8,6 @@ desc: Learn Linux
 <h1 style="color:orange;">Linux</h1>
 <p>If you gaze into the kernel the kernel gazes back</p>
 
-{% for post in site.categories["linux"] %}
+{% for post in site.tags["linux"] %}
     <a href="{{post.url}}"><li style="color: cornflowerblue;">{{ post.title }}</li></a>
 {% endfor %}

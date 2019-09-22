@@ -7,6 +7,6 @@ permalink: /windows
 <h1 style="color:orange;">Windows</h1>
 <pre>Let me get rid of this bluescreen first </pre>
 
-{% for post in site.categories["windows"] %}
+{% for post in site.tags["windows"] %}
     <a href="{{post.url}}"><li style="color: cornflowerblue;">{{ post.title }}</li></a>
 {% endfor %}

@@ -7,6 +7,6 @@ desc: Build stuff
 ---
 <h1 style="color:orange;">Blueprints</h1>
 <p>How to do certain stuff in more programming languages.</p>
-{% for post in site.categories["blueprints"] %}
+{% for post in site.tags["blueprints"] %}
     <a href="{{post.url}}"><li style="color: cornflowerblue;">{{ post.title }}</li></a>
 {% endfor %}
