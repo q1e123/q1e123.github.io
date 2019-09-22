@@ -4,6 +4,7 @@ title:  Variables
 categories: [lesson]
 tag: [basics]
 where: Programming
+permalink: /:categories/:title:output_ext
 desc: Imagine that you pass by a river and you want to get some water for later use. One way of doing that is by storing the water in a container. In programming you don't want to store water but data and you do it by putting it in a variable.
 ---
 
