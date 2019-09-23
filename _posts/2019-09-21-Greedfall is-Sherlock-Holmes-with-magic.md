@@ -1,4 +1,5 @@
 ---
+permalink: /:categories/:year/:month//:title
 layout: blog_post
 title:  Greedfall is Sherlock Holmes with magic
 categories: [blog]

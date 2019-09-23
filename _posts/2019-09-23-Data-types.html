@@ -1,0 +1,76 @@
+---
+layout: post
+title:  Data types
+categories: [lesson]
+tag: [basics]
+where: Programming
+permalink: /:categories/:title
+desc:
+---
+
+<div class="post">
+<h2>Introduction</h2>
+<br>
+<p>
+    In the last lesson I've spoken a little about data types. Returning to the same example, imagine that you have a substance that needs to be kept in a special container. Let's think why some characteristics of that container matters.
+</p>
+<br>
+<h2>Type</h2>
+<br>
+<p>
+    If you have a special container that can hold just one type of substance first of all it tells you that you can use it: to store that type of substance. With data types you tell the compiler/interpreter how you are going to use that piece of data.
+    <br>
+    If you declare a variable as a integer, you tell the compiler/interpreter that you will be using that variable as an integer.
+    <br>
+    The most common types are:
+    <ul>
+        <li>integers</li>
+        <li>floating-point numbers (real numbers)</li>
+        <li>booleans (1 and 0)</li>
+        <li>characters</li>
+    </ul>
+</p>
+<h3>Example</h3>
+In C++, if you want to declare an integer, a fp number, a boolean and a character (<b>a single one</b>)  you can do the following:
+{% highlight c %}
+int integ;
+double fp_number;
+bool bl;
+char ch;
+{% endhighlight %}
+
+<b> There are other ways of declaring integers and fp numbers mostly for memory purposes.
+
+<h2>Size</h2>
+The container may have different sizes. The bigger it is the more substance can it hold but also ocupies more space. The same is with data types. The bigger the data that it can hold the more memory it occupies. When you type a data type you tell the compiler/interpreter to reserve an ammount of memory. 
+<br>
+Now why size matters? Because your computer doesn't have an infinite ammount of memory and you also don't want to try to store data in a data type that won't be able to store it's size. If you try to do something like this funky stuff may happen, like if you try to put a big positive number in a type that won't support big numbers it may actually store a negative value.
+<br>
+Usually there are standards about this but size is dependent of the compiler/interpreter so those standards may not always apply.
+
+<h3>Example</h3>
+In C++ if you want to get the size of a data type you do: 
+
+{% highlight c %}
+sizeof(data_type);
+{% endhighlight %}
+
+<b> This will only get the size if you want to see it you need to print it somewhere</b>
+<br>
+
+```cpp
+std::cout << sizeof(int); 
+```
+
+This will print on stdout (usaully console/terminal)
+<br>
+The standard would say that the size should be 2 bytes, meaning that it can hold a maximum value of 2<sup>15</sup>.
+<br>
+The method of getting the maximum value is easy since 1 byte = 8 bits and a bit can hold either 1 or 0:
+<ol>
+    <li>Get the number of bytes a data type uses</li>
+    <li>Rise 2 to the power of that number minus one</li>
+</ol>
+I am going to go into more depth in a later post in the IT section about how computers actually store data.
+
+</div>
