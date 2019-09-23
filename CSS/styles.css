@@ -36,3 +36,7 @@ body{
 .post h3{
     color: orange !important;
 }
+
+.post b{
+    color: lightcoral !important;
+}
