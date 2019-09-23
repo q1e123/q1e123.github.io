@@ -32,36 +32,37 @@ desc:
 </p>
 <h3>Example</h3>
 In C++, if you want to declare an integer, a fp number, a boolean and a character (<b>a single one</b>)  you can do the following:
+<br>
 {% highlight cpp %}
 int integ;
 double fp_number;
 bool bl;
 char ch;
 {% endhighlight %}
-
+<br>
 <b> There are other ways of declaring integers and fp numbers mostly for memory purposes.
-
+<br>
 <h2>Size</h2>
 The container may have different sizes. The bigger it is the more substance can it hold but also ocupies more space. The same is with data types. The bigger the data that it can hold the more memory it occupies. When you type a data type you tell the compiler/interpreter to reserve an ammount of memory. 
 <br>
 Now why size matters? Because your computer doesn't have an infinite ammount of memory and you also don't want to try to store data in a data type that won't be able to store it's size. If you try to do something like this funky stuff may happen, like if you try to put a big positive number in a type that won't support big numbers it may actually store a negative value.
 <br>
 Usually there are standards about this but size is dependent of the compiler/interpreter so those standards may not always apply.
-
+<br>
 <h3>Example</h3>
 In C++ if you want to get the size of a data type you do: 
-
+<br>
 {% highlight cpp %}
 sizeof(data_type);
 {% endhighlight %}
-
+<br>
 <b> This will only get the size if you want to see it you need to print it somewhere</b>
 <br>
 
-```c++
-std::cout << sizeof(int); 
-```
-
+{% highlight cpp %}
+std::cout << sizeof(data_type);
+{% endhighlight %}
+<br>
 This will print on stdout (usaully console/terminal)
 <br>
 The standard would say that the size should be 2 bytes, meaning that it can hold a maximum value of 2<sup>15</sup>.
@@ -73,4 +74,5 @@ The method of getting the maximum value is easy since 1 byte = 8 bits and a bit 
 </ol>
 I am going to go into more depth in a later post in the IT section about how computers actually store data.
 
+<br>
 </div>
