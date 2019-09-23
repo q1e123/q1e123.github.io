@@ -29,7 +29,13 @@ github_username:  q1e123
 
 # Build settings
 remote_theme: q1e123/qtheme
-highlighter: rouge
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 
 plugins:
   - jekyll-feed
