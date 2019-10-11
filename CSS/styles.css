@@ -40,3 +40,7 @@ body{
 .post b{
     color: lightcoral !important;
 }
+
+.checked{
+    color: orange;
+}
