@@ -4,7 +4,7 @@ layout: blog_post
 title:  Microsoft
 categories: [bad]
 tag: [windows]
-where: blog
+where: What is bad about
 desc: Reasons not to use Microsoft
 ---
 
