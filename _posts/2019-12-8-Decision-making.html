@@ -1,0 +1,74 @@
+---
+layout: post
+title:  Decision making
+categories: [lesson]
+tag: [basics]
+where: Programming
+permalink: /:categories/:title
+desc:
+---
+
+<div class="post">
+<h1>Introduction</h1>
+Imagine you need to make a decision.  How are you going to make it?  Well most probably you will verify some conditions in your head. For example if you need to make a decision about going outside you might verify if it's sunny.
+<br>
+<h1> if </h1>
+In programming you will make decisions depending on the data and some results. Most programming languages have the <b>if... else... </b> statement and you usually use it like this:
+
+{% highlight cpp %}
+if (condition){
+    ...
+} else {
+    ...
+}
+{% endhighlight %}
+
+where condition is a logical condition or in some programming languages it can be anything that can be represented as a number (0 will be false, anything else will be true)
+<b>You don't need to have an else statement too, it's optional</b>
+
+<h2>Example</h2>
+{% highlight cpp %}
+int x = 1;
+
+if (x < 5){
+    std::cout<<"x is less than 5";
+} else {
+    std::cout<<"x is greater or equal to 5";
+}
+{% endhighlight %}
+
+This will print <i>x is less than 5</i>
+
+<h1>switch</h1>
+Some programming languages have a statement called <b>switch</b> that is a lookup table (<b>it's not just if else</b>). If your programming language dosen't have it you can do if else, but won't be as efficient as a switch, or you can do some funky magic with a hash table.
+The basic syntax is:
+{% highlight cpp %}
+switch(expression){
+    case constant-expression:
+        ...
+    case constant-expression:
+        ...
+    ...
+    default:
+        ...
+}
+
+The default part is optional. That path will be taken if the value wasn't found in the lookup table.
+
+<h2>Example</h2>
+{% highlight cpp %}
+int x = 1;
+switch(x){
+    case 1:
+        std::cout<<"A";
+    case 2:
+        std::cout<<"B";
+    default:
+        std::cout<<"C";
+}
+{% endhighlight %}
+
+This will print <i>A</i>.
+
+<b>You can use break to skip the remaining verifications</b>
+</div>

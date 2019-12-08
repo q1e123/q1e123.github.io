@@ -1,0 +1,60 @@
+---
+layout: post
+title:  Loops
+categories: [lesson]
+tag: [basics]
+where: Programming
+permalink: /:categories/:title
+desc:
+---
+
+<div class="post">
+<h1>Introduction</h1>
+There are situations where you will want to run the same instructions for more than one time. There are two solutions to do that: one that's stupid and one that isn't. The stupid solution would be to copy and paste the code, but this is having a little problem: what will you do if you need to run the code an unknown number of times? Also if you need to run the same code for a lot of time do you really wanna to stay and copy and paste? The solution is pretty simple: you can use a repetitive statement.
+
+<h1>while</h1>
+This is the most basic form of a repetitive is the while loop. It will repeat it's content as long as a condition is true. You will mostly use it when you don't know how many times the code will need to repeat. The syntax is:
+{% highlight cpp %}
+while(condition){
+    ...
+}
+{% endhighlight %}
+<br>
+<h2>Example</h2>
+{% highlight cpp %}
+int x=0;
+while(x < 5){
+    std::cout<<"*";
+    ++x;
+}
+{% endhighlight %}
+
+This will print <i>*****</i>.
+
+<h1>for</h1>
+for is another form of a repetitive loop. It's very similar to the while statement. You will mostly use it when you know the number of times the code needs to repeat. The syntax is:
+
+{% highlight cpp %}
+for ( init; condition; increment ) {
+    ...
+} 
+{% endhighlight %}
+It works like this:
+<ol>
+    <li>init- here you can declare variables. This is done only at the beginning of for </li> 
+    <li>condition- if this condition is false than the code will stop executing. This is done before every repetition. </li> 
+    <li>increment- here you can increment variables. This is done at the end of each repetition</li> 
+</ol>
+
+<h2>Example</h2>
+
+{% highlight cpp %}
+for ( int x = 0; x < 5; ++x ) {
+    std::cout<<"*";
+} 
+{% endhighlight %}
+
+This will print <i>*****</i>.
+
+<b>init, condition and increment are optional. You can skip them and just put ; .</b>
+</div> 
