@@ -23,24 +23,3 @@ body{
 .accordion h1{
     color: white;
 }
-
-.post h1{
-    color: orange !important; 
-}
-
-.post h2{
-    color: orange !important;
-}
-
-
-.post h3{
-    color: orange !important;
-}
-
-.post b{
-    color: lightcoral !important;
-}
-
-.checked{
-    color: orange;
-}
