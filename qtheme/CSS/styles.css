@@ -1,5 +1,3 @@
-@import "monokai.css";
-
 .menu_title{
     text-align: center;
     font-weight: bold;
@@ -33,5 +31,17 @@ body{
 }
 
 .content h4{
+    color:greenyellow !important;
+}
+h1{
+    color:greenyellow !important;
+}
+h2{
+    color:greenyellow !important;
+}
+h3{
+    color:greenyellow !important;
+}
+h4{
     color:greenyellow !important;
 }
