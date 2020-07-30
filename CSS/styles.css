@@ -19,3 +19,6 @@
 body{
     color: #FFFFFF;
 }
+.accordion h1{
+    color: white !important;
+}
