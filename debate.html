@@ -5,17 +5,17 @@ where: Debate
 permalink: /debate
 desc: Debate motions and values
 ---
-<h1 style="color:orange;">Debate</h1>
+<h1>Debate</h1>
 <p> I get random motions from the internet or two values and I try to make a case for the affirmative and one for the negative. You will find arguments, refutation and some questions you can ask during CX.</p>
 <br>
-<h2 style="color:orange;">Motions</h2>
+<h2>Motions</h2>
 {% for post in site.categories["motion"] %}
     <li style="color: white;"> <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
 {% endfor %}
 
 <br><br>
 
-<h2 style="color:orange;">Values</h2>
+<h2>Values</h2>
 {% for post in site.categories["value"] %}
     <li style="color: white;"> <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
 {% endfor %}
