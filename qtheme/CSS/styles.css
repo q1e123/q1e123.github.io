@@ -24,27 +24,10 @@ body{
     color: white;
 }
 
-.post h1{
-    color: orange !important; 
+.content h1{
+    color:greenyellow !important;
 }
 
-.post h2{
-    color: orange !important;
-}
-
-h2{
-    color: orange !important;
-}
-
-
-.post h3{
-    color: orange !important;
-}
-
-.post b{
-    color: lightcoral !important;
-}
-
-.checked{
-    color: orange;
+.content h2{
+    color:greenyellow !important;
 }
