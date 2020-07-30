@@ -20,22 +20,9 @@ body{
     color: #FFFFFF;
 }
 
-.white-col h1{
+.white-col{
     color: white !important;
 }
-
-.white-col h2{
-    color: white !important;
-}
-
-.white-col h3{
-    color: white !important;
-}
-
-.white-col h4{
-    color: white !important;
-}
-
 .hacker-green{
     color:greenyellow !important;
 }
