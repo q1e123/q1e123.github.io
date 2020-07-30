@@ -19,10 +19,8 @@
 body{
     color: #FFFFFF;
 }
-.accordion h1{
-    color: white !important;
-}
-.about-acc h1,h2{
+
+.about-acc h1{
     color: white !important;
 
 }
