@@ -3,17 +3,22 @@ layout: page
 title: Debate
 where: Debate
 permalink: /debate
-desc: Debate motions and values
+desc: Debate stuff
 ---
-<h1>Debate</h1>
-<p> I get random motions from the internet or two values and I try to make a case for the affirmative and one for the negative. You will find arguments, refutation and some questions you can ask during CX.</p>
-<br>
-<h2>Motions</h2>
-{% for post in site.categories["motion"] %}
+
+# Debate
+Posts about debate.
+
+## Cases
+{% for post in site.categories["debate_case"] %}
     <li style="color: white;"> <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
 {% endfor %}
 
 <br><br>
+
+## Theory
+
+## Values
 
 <h2>Values</h2>
 {% for post in site.categories["value"] %}

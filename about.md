@@ -9,16 +9,15 @@ desc: My name is Robert-Nicolae Solca. I am a Computer Engineering Student at Fa
 
 <div class="float-sm-right"><img style="max-width: 15em;" src="{{site.baseurl}}/assets/img/me.png"/></div>
 
-<h2>Welcome!</h2>
-<br>
-My name is <b>Robert-Nicolae Solca</b>. I am a Computer Engineering Student at Faculty of Electrical Engineering and Computer Science.
-<br><br>
+# About
+My name is **Robert-Nicolae Solca**. I am a  Computer Engineering Student at [Faculty of Electrical Engineering and Computer Science](https://iesc.unitbv.ro/)
 
+During High School I've participated at a multitude of IT&C contests, thus developing a deeper knowledge of computers, networks and programming languages. This made me to receive many awards, including 3 bronze medals. To strengthen my technical skills I've also worked on personal projects, such as a collection of scripts that can be used to test a system's security.  
+During this period I've taken care of my soft skills by participating in debate contests that helped me develop my critical thinking and communication skills.  
 
-During High School I've participated at a multitude of IT&C contests, thus developing a deeper knowledge of computers, networks and programming languages. This made me to receive many awards, including 3 bronze medals. To strengthen my technical skills I've also worked on personal projects, such as a collection of scripts that can be used to test a system's security.
-During this period I've taken care of my soft skills by participating in debate contests that helped me develop my critical thinking and communication skills.
-<br><br>
 Now I am focusing on increasing my knowledge about computers and how they work while also further developing my soft skills. 
+
+For a more information about skills and professional visit my [LinkedIn profile](https://www.linkedin.com/in/robert-nicolae-solca/)
 
 <h2>Links</h2>
 

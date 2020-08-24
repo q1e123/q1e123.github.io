@@ -5,9 +5,9 @@ where: Blog
 permalink: /blog
 desc: Robert's blog
 ---
-<h1">Blog</h1>
+# Blog
 
-<p> Random stuff</p>
+Random stuff
 
 {% for post in site.categories["blog"] %}
     <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
