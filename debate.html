@@ -16,6 +16,6 @@ desc: Debate motions and values
 
 <h2>Theory</h2>
 <h3>Economy</h3>
-{% for post in site.tag["economy"] %}
+{% for post in site.tags["economy"] %}
     <li style="color: white;"> <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
 {% endfor %}
