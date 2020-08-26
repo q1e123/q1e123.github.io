@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Brief overview of capitalism
+title:  Pro capitalism arguments
 categories: [Debate]
 tag: [economy]
 where: Debate

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Brief overview of capitalism
+title:  Brief overview of socialism
 categories: [Debate]
 tag: [economy]
 where: Debate
