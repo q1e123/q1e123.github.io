@@ -10,7 +10,7 @@ desc:
 
 # Pro capitalism arguments
 ## Introduction
-Before reading this I strongly recommend you to read [Brief overview of capitalism](2020-08-26-Brief-overview-of-capitalism.md).
+Before reading this I strongly recommend you to read [Brief overview of capitalism](Brief-overview-of-capitalism.md).
 
 ## Arguments
 ### Free market benefits the consumer
