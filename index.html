@@ -3,29 +3,34 @@ layout: page
 title: Robert_Solca
 desc: Programmer | Debate enthusiast
 ---
-<h1>Links</h1>
 
-<a style="color: white;" href="https://www.linkedin.com/in/robert-nicolae-%C8%99olc%C4%83-526441167/"><i class='fab fa-linkedin-in' style='font-size:24px'></i></a>
-<a style="color: white;" href="https://github.com/q1e123"><i class='fab fa-github' style='font-size:24px'></i></a>
-<br><br>
+<h1>Introduction</h1>
+<ul>
+    <li><a href="https://github.com/q1e123"></a> Software</li> - Open source software that I've written
+    <li>Lessons</li> - If you wanna understand stuff
+    <li><a href="https://www.linkedin.com/in/robert-nicolae-solca/"></a>LinkedIn</li> - professional life 
+</ul>
 
-
-<h1 >Recent lessons</h1>
-{% for post in site.categories["lesson"] limit:5 %}
-<li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
-{% endfor %}
-<br><br>
-
-<h1 >Recent blog posts</h1>
-{% for post in site.categories["blog"] limit:5 %}
-<li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
-{% endfor %}
-
-<br><br>
-
-<h1 >Recent debate posts</h1>
-{% for post in site.categories["debate"] limit:5 %}
-<li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
-{% endfor %}
-<br><br>
-
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <h1 >Recent lessons</h1>
+            {% for post in site.categories["lesson"] limit:5 %}
+            <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
+            {% endfor %}
+        </div>
+        <div class="col-sm">
+            <h1 >Recent blog posts</h1>
+            {% for post in site.categories["blog"] limit:5 %}
+            <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
+            {% endfor %}
+        </div>
+        <div class="col-sm">
+        
+            <h1 >Recent debate posts</h1>
+            {% for post in site.categories["debate"] limit:5 %}
+            <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
