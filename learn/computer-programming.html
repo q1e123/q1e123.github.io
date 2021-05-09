@@ -1,0 +1,16 @@
+---
+layout: page
+title: Learn
+where: Learn
+permalink: /learn
+desc: RTFM
+---
+<h1>Basics of computer programming</h1>
+This is a concept-based course on the basics of computer programming.
+<br>
+<br>
+<ul>
+    {% for post in site.tags["computer-programming"] %}
+        <li style="color: white;"> <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }}</li></a>
+    {% endfor %}
+</ul>
