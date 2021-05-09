@@ -4,30 +4,34 @@ title: Robert_Solca
 desc: Programmer | Debate enthusiast
 ---
 
-<h1>Introduction</h1>
+<h1>Quick overview</h1>
 <ul>
+    <li><a href="{{site.baseurl/about}}">About</a> - Some information about myself</li>  
+    <li><a href="{{site.baseurl/debate}}">Debate</a> - Attempts to make people understand things</li>
+    <li><a href="{{site.baseurl/debate}}">Debate</a> - Cases and theory for academic debates</li>
+    <li><a href="{{site.baseurl/blog}}">Blog</a> - Random posts</li>
+    <li><a href="https://www.linkedin.com/in/robert-nicolae-solca/">LinkedIn</a> - Professional life </li>
     <li><a href="https://github.com/q1e123">Software</a>  - Open source software that I've written </li>
-    <li>Lessons - If you wanna understand stuff</li>
-    <li><a href="https://www.linkedin.com/in/robert-nicolae-solca/">LinkedIn</a> - professional life </li>
+    <li><a href="https://www.goodreads.com/q1e123">Goodreads</a> - Reading list and books that I've read or I am currently reading</li>
 </ul>
 
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <h1 >Recent lessons</h1>
+            <h2 >Recent lessons</h2>
             {% for post in site.categories["lesson"] limit:5 %}
             <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
             {% endfor %}
         </div>
         <div class="col-sm">
-            <h1 >Recent blog posts</h1>
+            <h2>Recent blog posts</h2>
             {% for post in site.categories["blog"] limit:5 %}
             <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
             {% endfor %}
         </div>
         <div class="col-sm">
         
-            <h1 >Recent debate posts</h1>
+            <h2>Recent debate posts</h2>
             {% for post in site.categories["debate"] limit:5 %}
             <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
             {% endfor %}
