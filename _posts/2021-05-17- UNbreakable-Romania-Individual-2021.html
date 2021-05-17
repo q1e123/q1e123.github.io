@@ -12,16 +12,16 @@ desc: Write-up for some problems from  UNbreakable Romania Individual 2021
         
         <h2>Solved problems</h2>
         <ul>
-                <li>crazy-number</li>
-                <li>defuse_the_bomb</li>
-                <li>substitute</li>
-                <li>bork-sauls</li>
-                <li>rsa-quiz</li>
-                <li>overflowie</li>
-                <li>the-restaurant</li>
-                <li>crossed-pil</li>
+                <li><a href="#crazy-number">crazy-number</a></li>
+                <li><a href="defuse_the_bomb">defuse_the_bomb</a></li>
+                <li><a href="substitute"></a>substitute</li>
+                <li><a href="bork-sauls">bork-sauls</a></li>
+                <li><a href="rsa-quiz">rsa-quiz</a></li>
+                <li><a href="the-restaurant">the-restaurant</a></li>
+                <li><a href="overflowie">overflowie</a></li>
+                <li><a href="crossed-pil">crossed-pil</a></li>
         </ul>
-        <h2>crazy-number</h2>
+        <h2 id="crazy-number">crazy-number</h2>
         <h3>Description</h3>
         Hi edmund. I have some problem with this strange message (103124106173071067062144062060066070145144061071061064143065142146070143145064064060071071144061064066064067141065063143146063061061063146070145060062061060065071063146144071144066071061144145066067062064175). Can you help me to figure out what it is?
         <br><br>
@@ -68,7 +68,7 @@ print(octal_to_str(nice))
         {% endhighlight %}
         <br>
         The output of that encryption represents the flag.
-        <h2>defuse_the_bomb</h2>
+        <h2 id="defuse_the_bomb">defuse_the_bomb</h2>
         <h3>Description</h3>
         You are the last CT alive, you have a defuse kit, and the bomb is planted. You need to hurry, but what?? Those Terrorists made the bomb defusal-proof...they locked it with a password. Find the password before the bomb explodes.
         <br><br>
@@ -142,7 +142,7 @@ print('Code: ', code)
         {% endhighlight %}
         <br>
         Using this code into the program gives us the flag.
-        <h2>substitute</h2>
+        <h2 id="substitute">substitute</h2>
         <h3>Description</h3>
         Hi, we need help. Because we have an admin who abuses power we no longer have control over the workstations. We need a group of hackers to help us. Do you think you can replace him?
         <br>
@@ -158,7 +158,7 @@ print('Code: ', code)
         I've started to search for vulnerabilities regarding function, and I've found <a href="https://isharaabeythissa.medium.com/command-injection-preg-replace-php-function-exploit-fdf987f767df">this medium post</a>, from which I've learned that one can inject PHP functions.
         <br>
         I didn't know what files were on the server so first thing I've used <b>http://35.198.90.23:30447/?vector=/Admin/e&replace=print_r(scandir(%22.%22))</b> to see files in the current dir and I've seen that there is a folder called <i>here_we_dont_have_flag</i>.  After I've used <b>http://35.198.90.23:30447/?vector=/Admin/e&replace=print_r(scandir(%22../html/here_we_dont_have_flag%22))</b> too see what files are in that folder and I've found a file called <i>flag.txt</i>. To read it I've used <b>http://35.198.90.23:30447/?vector=/Admin/e&replace=file_get_contents(%22here_we_dont_have_flag/flag.txt%22)</b> and there was the flag.
-        <h2>bork-sauls</h2>
+        <h2  id="bork-sauls">bork-sauls</h2>
         <h3>Description</h3>
         You must beat the Dancer of The Boreal Valley to get the flag.
         <br><br>
@@ -195,7 +195,7 @@ while hp >= 0:
 		break
 p.interactive()
         {% endhighlight %}
-        <h2>rsa-quiz</h2>
+        <h2 id="rsa-quiz">rsa-quiz</h2>
         <h3>Description</h3>
         We were trying to develop an AI-powered teacher, but it started giving quizes to anyone who tries to connect to our server. It seems to classify humans as 'not sentient' and refuses to give us our flag. We really need that flag - can you please help us?
 <br><br>
@@ -232,7 +232,7 @@ p.interactive()
         r.close()
         {% endhighlight %}
         <br>
-        <h2>the-restaurant</h2>
+        <h2  id="the-restaurant">the-restaurant</h2>
         <h3>Description</h3>
         Time for you to brush up on your web skills and climb the Michelin star ladder!
         <br><br>
@@ -251,7 +251,7 @@ p.interactive()
         <br>
         On the last level, you can put your name and in the end, you can see your ticket. First I've tried to edit the ticket but I got caught so I've tried to put as name <b>test:flag</b> and it worked.
 
-        <h2>overflowie</h2>
+        <h2 id="overflowie">overflowie</h2>
         <h3>Description</h3>
         This little app brags that is very secure. Managed to put my hands on the source code, but I am bad at pwn. Can you do it for me please? Thx.
         <br><br>
@@ -265,7 +265,7 @@ p.interactive()
                 <img src="{{site.baseurl}}/assets/img/UNbreakable-Romania-Individual-2021/overflowie/ghidra.png" class="figure-img img-fluid">
         </figure>
         <br>
-        <h2>crossed-pil</h2>
+        <h2 id="crossed-pil">crossed-pil</h2>
         <h3>Description</h3>
         You might not see this at first. You should look from one end to another.
         <br><br>
