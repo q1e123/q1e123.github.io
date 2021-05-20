@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Automatic-PCB-routing-using-OrCad
+title:  Automatic PCB routing using OrCad
 categories: [lesson]
 tag: [electronics, orcad]
 where: Electronics
