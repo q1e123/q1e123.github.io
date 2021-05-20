@@ -25,7 +25,9 @@ In the **Worksheet Selector**:
 
 In the right you will see a table. To modify line width modify the **Min** and **Max** value under Line Width.
 
-![Worksheet Selector]({{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/worksheet-selector.png "Worksheet Selector")
+<figure class="figure">
+    <img src="{{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/worksheet-selector.png" class="figure-img img-fluid" >
+</figure>
 
 ## Automatic route
 In this phase you are going to setup the parameters of automatic route and start the routing process.
@@ -37,14 +39,13 @@ In this phase you are going to setup the parameters of automatic route and start
 ### Modify parameters of automatic router
 
 <figure class="figure">
-    <img src="{{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/automatic-router.png" class="figure-img img-fluid" style="max-width: 10em;">
+    <img src="{{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/automatic-router.png" class="figure-img img-fluid" >
 </figure>
-
-![Automatic router]({{site.baseurl}} "Automatic router")
 
 Depending on your needs, you will need to modify these parameters accordingly.
 
 After press **Route** button. If you messed the parameters and you are not satisfied with the routing you can undo it by pressing the **Undo** button.
+
 
 #### Reccomended setup
 **Router Setup**
@@ -56,7 +57,7 @@ After press **Route** button. If you messed the parameters and you are not satis
 * **Routing Subclass**
     * Select only one
 <figure class="figure">
-    <img src="{{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/router-setup.png" class="figure-img img-fluid" style="max-width: 10em;">
+    <img src="{{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/router-setup.png" class="figure-img img-fluid" >
 </figure>
 
 **Smart Router**
@@ -65,7 +66,7 @@ After press **Route** button. If you messed the parameters and you are not satis
         * Via sharing
         * Pin sharing
 <figure class="figure">
-    <img src="{{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/smart-router.png" class="figure-img img-fluid" style="max-width: 10em;">
+    <img src="{{site.baseurl}}/assets/img/lessons/Electronics/Automatic-pcb-routing-orcad/smart-router.png" class="figure-img img-fluid" >
 </figure>
 
 
