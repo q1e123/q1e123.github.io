@@ -1,0 +1,16 @@
+---
+layout: page
+title: Basics of computer programming
+where: Learn
+permalink: /learn/OrCad
+desc: OrCad
+---
+<h1>OrCad</h1>
+Circuit Design using OrCad
+<br>
+<br>
+<ul>
+    {% for post in site.tags["orcad"] %}
+        <li style="color: white;"> <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
