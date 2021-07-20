@@ -14,7 +14,7 @@ desc: Programmer | Debate enthusiast
     </div>
     <div class="row" style="padding-bottom: 100px;">
         <div class="col-sm text-center">
-            <a href="{{site.baseurl/about}}" style="text-decoration: none;  color: white;"> 
+            <a href="{{site.baseurl}}/about" style="text-decoration: none;  color: white;"> 
                 <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_jvt4bdg7.json" style="height: 200px" background="transparent"  speed="1" loop autoplay></lottie-player>
                 <b>About me</b>
                 <br>
@@ -30,7 +30,7 @@ desc: Programmer | Debate enthusiast
             </a>
         </div>
         <div class="col-sm text-center">
-            <a href="{{site.baseurl/learn}}"  style="text-decoration: none;  color: white;"> 
+            <a href="{{site.baseurl}}/learn"  style="text-decoration: none;  color: white;"> 
                 <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_nIhxTu.json"  style="height: 200px"  background="transparent"  speed="1" loop autoplay></lottie-player>
                 <b>Learn</b>
                 <br>
@@ -38,7 +38,7 @@ desc: Programmer | Debate enthusiast
             </a>
         </div>
         <div class="col-sm text-center">
-            <a href="{{site.baseurl/debate}}"  style="text-decoration: none;  color: white;"> 
+            <a href="{{site.baseurl}}/debate"  style="text-decoration: none;  color: white;"> 
                 <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_jvpivv5x.json"  style="height: 200px"  background="transparent"  speed="1" loop autoplay></lottie-player>
                 <b>Debate</b>
                 <br>
@@ -46,15 +46,15 @@ desc: Programmer | Debate enthusiast
             </a>
         </div>
         <div class="col-sm text-center">
-            <a href="{{site.baseurl/blog}}"  style="text-decoration: none;  color: white;"> 
+            <a href="{{site.baseurl}}/write-ups"  style="text-decoration: none;  color: white;"> 
                 <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_0rpdkxjd.json "  style="height: 200px" background="transparent"  speed="1" loop autoplay></lottie-player>
-                <b>Security</b>
+                <b>write-ups</b>
                 <br>
-                Mostly write-ups from CTFs
+                Write-ups of some CTF problems that I've solved
             </a>
         </div>
         <div class="col-sm text-center">
-            <a href="{{site.baseurl/blog}}"  style="text-decoration: none;  color: white;"> 
+            <a href="{{site.baseurl}}/blog"  style="text-decoration: none;  color: white;"> 
                 <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bcmjcj8d.json " style="height: 200px"  background="transparent"  speed="1" loop autoplay></lottie-player>
                 <b>Blog</b>
                 <br>
@@ -71,7 +71,7 @@ desc: Programmer | Debate enthusiast
         </div>
         <div class="col-sm">
             <h2>Recent debate posts</h2>
-            {% for post in site.categories["debate"] limit:5 %}
+            {% for post in site.categories["Debate"] limit:5 %}
             <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
             {% endfor %}
         </div>
