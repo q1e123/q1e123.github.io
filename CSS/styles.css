@@ -33,3 +33,7 @@ h3{
 h4{
     color:greenyellow !important;
 }
+.small-button{
+    width: 25%;
+    height: 25%;
+}
