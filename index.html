@@ -58,9 +58,28 @@ desc: Programmer | Debate enthusiast
                 <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bcmjcj8d.json "  background="transparent"  speed="1" loop autoplay></lottie-player>
                 <b>Blog</b>
                 <br>
-                Random
+                Random stuff
             </a>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-sm">
+            <h2 >Recent lessons</h2>
+            {% for post in site.categories["lesson"] limit:5 %}
+            <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
+            {% endfor %}
+        </div>
+        <div class="col-sm">
+            <h2>Recent debate posts</h2>
+            {% for post in site.categories["debate"] limit:5 %}
+            <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
+            {% endfor %}
+        </div>
+        <div class="col-sm">
+            <h2>Recent blog posts</h2>
+            {% for post in site.categories["blog"] limit:5 %}
+            <li style="color: white;"> {{ post.date | date: '%d %B, %Y' }} -  <a style="color:cornflowerblue;" href="{{post.url}}">{{ post.title }} </li></a>
+            {% endfor %}
+        </div>
+    </div>
 </div>
