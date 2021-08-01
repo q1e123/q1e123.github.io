@@ -1,0 +1,124 @@
+---
+layout: post
+title:  Crypto-CTF-2021
+categories: [write-up]
+tag: [write-up]
+where: CTFs
+permalink: /:categories/:title
+desc: Write-up for Farm challenge from Crypto CTF
+---
+
+<div class="text-break">
+        
+        <h2>Solved challenges</h2>
+        <ul>
+                <li><a href="#farm">Farm</a></li>
+        </ul>
+        <h2 id="farm">Farm</h2>
+        <h3>Description</h3>
+        Explore the Farm very carefully!
+        <h3>Solution</h3>
+        We get the following two files:
+        <br>
+        <b>farm.sage</b>
+        <br>
+        {% highlight py %}
+#!/usr/bin/env sage
+
+from sage.all import *
+import string, base64, math
+from flag import flag
+
+ALPHABET = string.printable[:62] + '\\='
+
+F = list(GF(64))
+
+def keygen(l):
+        key = [F[randint(1, 63)] for _ in range(l)] 
+        key = math.prod(key) # Optimization the key length :D
+        return key
+
+def maptofarm(c):
+        assert c in ALPHABET
+        return F[ALPHABET.index(c)]
+
+def encrypt(msg, key):
+        m64 = base64.b64encode(msg)
+        enc, pkey = '', key**5 + key**3 + key**2 + 1
+        for m in m64:
+                enc += ALPHABET[F.index(pkey * maptofarm(chr(m)))]
+        return enc
+
+# KEEP IT SECRET 
+key = keygen(14) # I think 64**14 > 2**64 is not brute-forcible :P
+
+enc = encrypt(flag, key)
+print(f'enc = {enc}')
+        {% endhighlight %}
+        <br><br>
+        <b>enc.txt</b>
+        <br>
+        {% highlight %}
+enc = 805c9GMYuD5RefTmabUNfS9N9YrkwbAbdZE0df91uCEytcoy9FDSbZ8Ay8jj
+        {% endhighlight %}
+        <br><br>
+        I've never used sage before, but I've managed to find the <a href="https://doc.sagemath.org/html/en/index.html">documentation</a>.
+        <br>
+        <b>keygen(l)</b> generates a random key and returns it. <b>maptofarm(c)</b> verifies if the given char is in alphabet, and if it is it returns the element from list F that is at the same index as is c in the alphabet. <b>encrypt(msg, key)</b> first encodes the message using base64. After it uses the provided key to generate another key that is used to encrypt the base 64 encoded message. In the end it returns the encrypted message.
+        <br>
+        To solve this problem I've used the following script:
+        <br>
+        {% highlight py %}
+#!/usr/bin/env sage
+
+from sage.all import *
+import string, base64, math
+
+flag = b'ASIS'
+ALPHABET = string.printable[:62] + '\\='
+
+F = list(GF(64))
+
+def prod(list):
+        prod = 1
+        for item in list:
+        prod *= item
+        return prod
+
+def keygen(l):
+        key = [F[randint(1, 63)] for _ in range(l)] 
+        key = prod(key) # Optimization the key length :D
+        return key
+
+def maptofarm(c):
+        assert c in ALPHABET
+        return F[ALPHABET.index(c)]
+
+def encrypt(msg, key):
+        m64 = b'Q'
+        enc, pkey = '', key**5 + key**3 + key**2 + 1
+        for m in m64:
+                enc += ALPHABET[F.index(pkey * maptofarm(chr(m)))]
+                pkey = F[8]/maptofarm(chr(m))
+                print(pkey)
+        
+        return pkey
+
+# KEEP IT SECRET 
+key = keygen(14) # I think 64**14 > 2**64 is not brute-forcible :P
+pkey = encrypt(flag, key)
+
+def solve(enc, pkey):
+        m64 = ''
+        for char in enc:
+        ind = ALPHABET.index(char)
+        m2f = F[ind]/pkey
+        m64 += ALPHABET[F.index(m2f)]
+        print('64: ',m64)
+enc = '805c9GMYuD5RefTmabUNfS9N9YrkwbAbdZE0df91uCEytcoy9FDSbZ8Ay8jj'
+
+solve(enc, pkey)
+        {% endhighlight %}
+        <br><br>
+        Long story short: it does the reverse operations. I've modified the <b>encrypt</b> to return the pkey by doing the reverse operations. The <b>solve(enc, pkey)</b> takes as arguments the encrypted message and the pkey found previously. It takes every char from the encrypted message and does the reverse operations of the encrypt message. After I've used <a href="https://www.base64decode.org/">this site</a> to decode the flag.
+</div>
