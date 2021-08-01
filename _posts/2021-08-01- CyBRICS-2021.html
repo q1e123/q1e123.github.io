@@ -1,0 +1,27 @@
+---
+layout: post
+title:  Crypto-CTF-2021
+categories: [write-up]
+tag: [write-up]
+where: CTFs
+permalink: /:categories/:title
+desc: Write-up for Ad Network challenge from CyBRICS
+---
+
+<div class="text-break">
+        
+        <h2>Solved challenges</h2>
+        <ul>
+                <li><a href="#ad-network">Ad Network</a></li>
+        </ul>
+        <h2 id="ad-network">Ad Network</h2>
+        <h3>Description</h3>
+        We are so tired of advertising on the internet. It feels like it breaks the internet. Try to follow the ad, try to follow its rules.
+        <br><br>
+        Adnetwork website
+        <br><br>
+        There is a flag 1337 redirects deep into the network...
+        <br>
+        <h3>Solution</h3>
+        The Adnetwork website has a lot of redirects. By default most browsers have a limit of 20 redirects or so. To increase the limit I've used <a href="https://stackoverflow.com/questions/11077395/increase-allowed-redirects-in-browser#:~:text=In%20Firefox%2C%20navigate%20to%20about,value%20to%20your%20desired%20value.">this StackOverflow post</a> to increase the limit to get the flag.
+</div>
