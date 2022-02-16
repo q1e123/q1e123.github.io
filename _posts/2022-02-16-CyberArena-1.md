@@ -24,6 +24,7 @@ It's time to see what this program actually does so I've opened Ghidra to see th
 ![](/assets/img/cyberarena-1/restaurant-custom.png)
 
 The main function dosen't look very interesting, but the custom one is using **gets** before return, so I thought that maybe I can do a return to libc attack to get a reverse shell. To be sure of that I've run **checksec** and I found that there is no canery, so this kind of attack is possible.
+
 ![](/assets/img/cyberarena-1/restaurant-checksec.png).
 
 At first, I've tried to do it manually (get the offset using a pattern, get gadgets, find a block of memory, find libc version etc), but I've failed. I've started to researh some other ways of doing this attack and I found [this video](https://www.youtube.com/watch?v=i5-cWI_HV8o) that is using pwntools. The script that I've used to solve this can be found [here](https://github.com/q1e123/CyberArena-1/blob/master/restaurant-solve.py).
