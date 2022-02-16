@@ -27,7 +27,7 @@ The main function dosen't look very interesting, but the custom one is using **g
 
 ![](/assets/img/cyberarena-1/restaurant-checksec.png).
 
-At first, I've tried to do it manually (get the offset using a pattern, get gadgets, find a block of memory, find libc version etc), but I've failed. I've started to researh some other ways of doing this attack and I found [this video](https://www.youtube.com/watch?v=i5-cWI_HV8o) that is using pwntools. The script that I've used to solve this can be found [here](https://github.com/q1e123/CyberArena-1/blob/master/restaurant-solve.py).
+At first, I've tried to do it manually (get the offset using a pattern, get gadgets, find a block of memory, find libc version etc), but I've failed. I've started to research some other ways of doing this attack and I found [this video](https://www.youtube.com/watch?v=i5-cWI_HV8o) that is using pwntools. The script that I've used to solve this can be found [here](https://github.com/q1e123/CyberArena-1/blob/master/restaurant-solve.py).
 
 ## inject
 
@@ -38,13 +38,17 @@ We have received the attached file from a colleague. He told us that the file ma
 ## Solution
 
 It took some time to find out what this file actually was. At first I've tried volatility but with no luck. After I've used binwalk, but again, no luck. I've started to search on the Internet about security releated stuff that contain the word **inject** and I've found that it the file could be the keystrokes that were recorded using a Rubber Ducky, so I've tried to decode it.
+
 ![](/assets/img/cyberarena-1/inject-ducky-decode.png)
 
 And it seems that the hypothesis was right, but those spaces made the file quite ugly so I've used this site to make it easier to read.
+
 ![](/assets/img/cyberarena-1/inject-log.png)
+
 ![](/assets/img/cyberarena-1/inject-nospace.png)
 
 The pastebin link gave all the information we needed.
+
 ![](/assets/img/cyberarena-1/inject-ip.png)
 
 ## flash
@@ -63,7 +67,7 @@ So I opened Ghidra and started to analyse the code.
 
 ![](/assets/img/cyberarena-1/flash-nothing-here.png)
 
-It seems that the program is using a seed to generate four numbers and after it is using addition and xor to compute the password. We have the seed so we can use that to generate the same numbers. I've tried to use the reverse operations, but I didn't manage to do it (it gave me wrong number) and time was ticking away so I've brute force the number using a loop. The program used to compute the password can be found [here](https://www.youtube.com/watch?v=i5-cWI_HV8o).
+It seems that the program is using a seed to generate four numbers and after it is using addition and xor to compute the password. We have the seed so we can use that to generate the same numbers. I've tried to use the reverse operations, but I didn't manage to do it (it gave me wrong number) and time was ticking away so I've brute force the number using a loop. The program used to compute the password can be found [here](https://github.com/q1e123/CyberArena-1/blob/master/flash.c).
 At first I've compiled it using Visual Studio, but the flag wasn't accepted, so I thought there was something regarding the compiler. I've compiled it after on Linux using **gcc** and **g++** and I've got the correct password.
 ![](/assets/img/cyberarena-1/flash-running.png)
 
